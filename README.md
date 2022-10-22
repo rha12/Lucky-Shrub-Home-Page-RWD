@@ -8,7 +8,7 @@ The web page has been made using sematic html and is responsive. The projects in
 
 - All necessary meta tags usually required for the SEO and for generating page preview for the social media platefrom are used.
 - Semantic html such as header, main, footer, section, article etc have been used.
-- The layout is made using flexbox.
+- The layout is made responsive using flexbox and media queries.
 - monochromatic and complementary color scheme has been used i.e shades of green and complementary shades of red.
 - CSS properites such as box-shadow, transition and hover psuedo class has been used to create aweosome CSS effects.
 The whole project is made using pure CSS and HTML.
