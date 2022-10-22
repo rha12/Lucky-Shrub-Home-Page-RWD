@@ -12,5 +12,4 @@ The web page has been made using sematic html and is responsive. The projects in
 - monochromatic and complementary color scheme has been used i.e shades of green and complementary shades of red.
 - CSS properites such as box-shadow, transition and hover psuedo class has been used to create aweosome CSS effects.
 <br/>
-<br/>
 The whole project is made using pure CSS and HTML.
