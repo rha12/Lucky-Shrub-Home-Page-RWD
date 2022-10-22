@@ -1,0 +1,363 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+   
+}
+
+body{
+    background-color: #FFFDD0;
+    display:flex;
+    flex-flow: row wrap;
+    font-family: 'Bungee Inline', cursive;
+    
+}
+
+header{
+    flex:0 1 100vw;
+    height:30vh;
+    border-radius:2em;
+    box-shadow: 0.8em 0em 1.3em #F3E5AB, -0.8em 0em 1.3em #F3E5AB;
+    background-color: #ffffff;
+    margin:2em;
+    display: flex;
+    justify-content: center;
+}
+
+header img{
+    flex-basis: 10vw;
+    margin: 0.3em;
+}
+
+nav{
+    flex:0 1 100vw;
+    border-radius:2em;
+    box-shadow: 0.8em 0em 1.3em #F3E5AB, -0.8em 0em 1.3em #F3E5AB;
+    background-color: #ffffff;
+    margin:2em;
+    display: flex;
+    
+    justify-content: center;
+    margin-top: 0;
+    
+}
+
+nav ul{
+    flex:0 1 100vw;
+    list-style-type: none;
+    border-radius:2em;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+nav ul li{
+    background-color: #097969;
+    height:12vh;
+    flex:0 0 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+nav a{
+ 
+    position: relative;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: .1em;
+    line-height: 1em;
+
+
+}
+
+nav a:after{
+    content:"";
+    position: absolute;
+    width: 0;
+    height: .2em;
+    background-color: #ffffff;
+    left: 0;
+    top:2em;
+    transition: width .3s;
+
+}
+
+nav a:before{
+    content:"";
+    position: absolute;
+    width: 0;
+    height: .2em;
+    background-color: #ffffff;
+    left: 0;
+    top:-1em;
+    transition: width .3s ease-in-out;
+}
+
+nav a:hover:before{
+    width: 100%;
+}
+nav a:hover:after{
+    width: 100%;
+}
+
+main{
+    flex: 0 1 100vw;
+    background-color: #ffffff;
+    margin:2em;
+    margin-top: 0;
+    border-radius:2em;
+    display: flex;
+    flex-flow: row wrap;
+    box-shadow: 0.8em 0em 1.3em #F3E5AB, -0.8em 0em 1.3em #F3E5AB;
+}
+
+main section:nth-child(1){
+    flex: 0 1 100vw;
+    margin:1em;
+    border-radius:2em;
+    box-shadow: 0.8em 0em 1.3em #F3E5AB, -0.8em 0em 1.3em #F3E5AB;
+    
+    
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+
+main section:nth-child(1) article{
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: center;    
+}
+main section:nth-child(1) article p{
+    margin-left: 1em;
+    margin-right: 1em;
+    line-height: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-family: 'Bungee Inline', cursive;
+    word-break:break-word;
+    font-size:4em;
+    color:#C41E3A;
+
+  
+}
+
+main section:nth-child(2){
+    flex: 0 1 100vw;
+    margin:1em;
+    border-radius:2em;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
+
+}
+
+main section:nth-child(2) article{
+    flex: 0 0 20vw;
+    margin-top:1em;
+    margin-bottom:1em;
+    border-radius:2em;
+    display: flex;
+    flex-flow: column wrap;
+    box-shadow: 0.8em 0em 1em #F3E5AB, -0.8em 0em 1.3em #F3E5AB;
+
+}
+
+main section:nth-child(2) article div{
+    height: 50%;
+
+}
+
+main section:nth-child(2) article div img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 2em 2em 0 0;
+}
+
+main section:nth-child(2) article div:nth-child(1){
+    border-radius: 2em 2em 0 0;
+}
+
+main section:nth-child(2) article div:nth-child(2){
+    line-height: 1.5em;
+    border-radius: 0 0 2em 2em;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    color:#C41E3A;
+    
+}
+main section:nth-child(2) article div:nth-child(2) button,p,h1{
+    margin-top: .3em;
+    margin-bottom: .3em;
+
+}
+main section:nth-child(2) article div:nth-child(2) a{
+    text-decoration: none;
+}
+
+main section:nth-child(2) article div:nth-child(2) p{
+    margin-left:1.3em;
+    margin-right:1.3em;
+    width: 25ch;
+    font-weight: 700;
+}
+main section:nth-child(2) article div:nth-child(2) h1{
+    font-size: 1.5em;
+    font-weight: 550;
+}
+button{
+    width: 8em;
+    height: 3em;
+    border: 0ch;
+    border-radius: 1.5em;
+    background-color: #2AAA8A;
+    box-shadow: 0.8em 0em 1.3em e2dfd2, -0.8em 0em 1.3em e2dfd2;
+    transition: background-color .3s;
+}
+
+button a{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: 'Bungee Inline', cursive;
+}
+
+button:hover{
+    background-color: #097969;
+}
+
+footer{
+    flex:0 1 100vw;
+    height:30vh;
+    border-radius:2em;
+    box-shadow: 0.8em 0em 1.3em #F3E5AB, -0.8em 0em 1.3em #F3E5AB;
+    background-color: #ffffff;
+    margin:2em;
+    margin-top: 0;
+    display: flex;
+ 
+}
+
+footer section{
+    flex: 0 1 50%;
+    height:30vh;
+}
+
+footer section:nth-child(1){
+    
+    border-radius: 2em 0 0 2em;
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+footer section:nth-child(2){
+
+    border-radius: 0 2em 2em 0;
+   
+    display: flex;
+    flex-flow:column wrap;
+    justify-content: flex-start;
+   
+}
+footer section:nth-child(2) h1{
+    color: #C41E3A;
+}
+footer section:nth-child(2) h1:nth-child(1){
+    content: "";
+    background-color: #C41E3A;
+    border-radius: .1em;
+    height:.2em;
+    margin-top:2em;
+    margin-right: 1em;
+
+}
+
+footer section:nth-child(2) h1:nth-child(2){
+    align-self: flex-end;
+    margin-top:0.4em;
+    margin-right: 1em;
+}
+
+footer section:nth-child(1) img{
+    display: block;
+    margin-left: 2em;
+   
+    flex: 0 1 10vw;
+    height: 90%;
+    object-fit: contain;
+}
+
+@media screen and (max-width:1123px){
+    nav ul li{
+        flex:0 0 14vw;
+     
+    }
+
+}
+
+@media screen and (max-width:800px){
+    nav ul li{
+        flex:0 0 18vw;
+     
+    }
+
+}
+
+@media screen and (max-width:615px){
+    nav ul li:nth-child(1){
+
+        border-radius: 2em 0 0 2em;
+    }
+    nav ul li:nth-child(4){
+        border-radius: 0 2em 2em 0;
+
+    }
+    nav ul{
+        flex-wrap: nowrap;
+    }
+    nav ul li{
+        flex:0 0 22vw;
+    }
+
+}
+@media screen and (max-width:504px){
+    nav ul{
+        flex-flow: column wrap;
+    }
+    nav{
+        background-color: #097969;
+    }
+
+    nav ul li{
+        margin-top: .5em;
+        margin-bottom: .5em;
+    }
+
+    
+    nav ul li:nth-child(1){
+        margin-top: 1em;
+        border-radius: 2em 2em 0 0;
+    }
+    nav ul li:nth-child(4){
+        border-radius: 0 0 2em 2em;
+        margin-bottom: 1em;
+    }
+    
+}
+
+
+
+
+
+
